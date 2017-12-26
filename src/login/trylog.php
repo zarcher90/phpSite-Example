@@ -13,6 +13,6 @@ if ($_SESSION['login']==true || ($_POST['username']==$usr && $_POST['password']=
   exit();
 }
 else {
-    echo "incorrect login";
+    header("Location:login.php?login=Fail");
 }
 ?>
